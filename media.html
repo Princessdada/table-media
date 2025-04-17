@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>About Me</title>
+  </head>
+  <body>
+    <h1>About Me — Through Media</h1>
+
+    <!-- Picture element with more than 3 sources for responsiveness -->
+    <picture>
+      <source media="(max-width: 480px)" srcset="Images/about-me-1.jpg" />
+      <source media="(max-width: 768px)" srcset="Images/about-me-2.jpg" />
+      <source media="(max-width: 1200px)" srcset="Images/about-me-3.jpg" />
+      <source media="(min-width: 1201px)" srcset="Images/about-me-4.jpg" />
+      <img src="Images/about-me-5.jpg" alt="about me" width="400" />
+    </picture>
+
+    <!-- My image -->
+    <h3>My Photo</h3>
+    <img src="Images/my-photo.jpg" alt="My Photo" width="300" />
+
+    <!-- Embed Tag -->
+    <h3>My Personal Manifesto</h3>
+    <embed
+      src="Images/My Personal Manifesto.pdf"
+      width="600"
+      height="400"
+      type="application/pdf" />
+
+    <!-- Object Tag-->
+    <h3>My Resume</h3>
+    <object
+      data="Images/DADA PRINCESS ENIOLA frontend cv 2025.pdf"
+      type="application/pdf"
+      width="600"
+      height="400">
+      <p>
+        Your browser does not support PDFs.
+        <a href="Images/DADA PRINCESS ENIOLA frontend cv 2025.pdf"
+          >Download the file</a
+        >.
+      </p>
+    </object>
+
+    <!-- Iframe Tag-->
+    <h3>Best Motivational Video</h3>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/7sxpKhIbr0E?si=JbiEqJmZMKxrtQQS"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
+
+    <!-- Audio Tag-->
+    <h3>My Favourite Music</h3>
+    <audio controls>
+      <source src="Images/favorite-music.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Video Tag-->
+    <h3>My Favourite Comedy Page</h3>
+    <video width="320" height="240" controls>
+      <source src="Images/favorite-video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </body>
+</html>
